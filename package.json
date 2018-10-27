@@ -19,6 +19,7 @@
   "homepage": "https://github.com/mbennett5516/bamazon#readme",
   "dependencies": {
     "express": "^4.16.4",
+    "mysql2": "^1.6.1",
     "path": "^0.12.7",
     "sequelize": "^4.41.0"
   }
