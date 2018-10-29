@@ -1,5 +1,5 @@
 module.exports = function(sequelize, DataTypes) {
-    const Product = sequelize.define('Product', {
+    const Products = sequelize.define('Products', {
       product_name: {
         type: DataTypes.STRING,
         allowNull: false
@@ -18,5 +18,5 @@ module.exports = function(sequelize, DataTypes) {
       }
     });
   
-    return Product;
+    return Products;
   }

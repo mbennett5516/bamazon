@@ -3,7 +3,9 @@ const app = express();
 const path = require('path');
 
 const db = require('./models');
-require
+require('./routes/html-routes')(app);
+
+app.use(express.static(path.join(__dirname, '/public')));
 
 PORT = 8080;
 
