@@ -1,0 +1,10 @@
+.jumbotron{
+    background-image: linear-gradient(to bottom right, teal, aqua);
+    color: white;
+    text-align: center;
+    text-shadow:
+		-2px -2px 0 #000,
+		2px -2px 0 #000,
+		-2px 2px 0 #000,
+		2px 2px 0 #000;
+}
