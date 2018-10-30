@@ -7,6 +7,10 @@ module.exports = function(app){
     });
 
     app.get('/shop', function(req, res){
-        res.sendFile(path.join(__dirname, '../public/shop.html'))
-    })
+        res.sendFile(path.join(__dirname, '../public/shop.html'));
+    });
+
+    app.get('/product', function(req, res){
+        res.sendFile(path.join(__dirname, "../public/product.html"));
+    });
 }

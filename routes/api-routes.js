@@ -11,8 +11,8 @@ module.exports = function(app){
     });
 
     app.get('/api/product/:id', function(req, res){
-        db.Products.findById(req.param.id).then(function(rows){
-            res.json(rows);
+        db.Products.findById(req.params.id).then(project =>{
+            res.json(project);
         }).catch(function(error){
             res.json({error: error});
         });
