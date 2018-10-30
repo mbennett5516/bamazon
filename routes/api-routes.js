@@ -11,7 +11,8 @@ module.exports = function(app){
     });
 
     app.get('/api/product/:id', function(req, res){
-        db.Products.findById(req.params.id).then(project =>{
+        db.Products.findAll({where:{id:req.params.id}}).then(project =>{
+            // console.log(project);
             res.json(project);
         }).catch(function(error){
             res.json({error: error});
