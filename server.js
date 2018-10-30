@@ -4,6 +4,10 @@ const path = require('path');
 
 const db = require('./models');
 require('./routes/html-routes')(app);
+require('./routes/api-routes')(app);
+
+app.use(express.urlencoded({extended: true}));
+app.use(express.json());
 
 app.use(express.static(path.join(__dirname, '/public')));
 

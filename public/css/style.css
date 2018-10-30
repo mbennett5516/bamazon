@@ -8,3 +8,11 @@
 		-2px 2px 0 #000,
 		2px 2px 0 #000;
 }
+
+.price{
+  text-align: right;
+}
+
+.card{
+  margin-bottom: 15px;
+}
